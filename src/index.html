@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FinFort</title>
+    <meta name="author" content="Арзамасцев Роман">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+    <main class="main">
+        <div class="search">
+            <header class = 'header'>
+                <h1 class="header__title"><a href='index.html' class="header__title-link">NewsAnalyzer</a></h1>
+                <nav class="header__menu">
+                    <ul class="header__content">
+                        <li class="header__menu-item"><a href="index.html" class="header__link header__link_active">Главная</a></li>
+                        <li class="header__menu-item"><a href="about.html" class="header__link">О проекте</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class="search__title">Что в мире творится?</h1>
+            <h2 class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</h2>
+            <div class="search__content-input">
+                <input type="text" required minlength = '2' maxlength = '30' class='search__input' placeholder="Введите тему новости" required>
+                <span id = "error" class="search__error" aria-live = 'polite'></span>
+                <button class='search__button'>Искать</button>
+            </div>    
+        </div>
+        <section class="preloader">
+            <h2 class="visually-hidden">Preloader</h2>
+            <i class="preloader__circle"></i>
+            <p class="preloader__name">Идёт поиск новостей</p>
+        </section>
+        <section class="not-found">
+            <img src="<%=require('./images/not-found.png')%>" alt="not found image" class="not-found__image">
+            <h3 class="not-found__title">Ничего не найдено</h3>
+            <p class="not-found__content">К сожалению по вашему запросу ничего не найдено</p>
+        </section>
+        <section class="result">
+            <div class="result__container">
+                <h2 class="result__title">Результаты поиска</h2>
+                <a href="./analytics.html" class="result__link">Посмотреть аналитику <img src="./images/Path_5.png" alt="arrow right"></a>
+            </div>
+            <p class="result__error">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз</p>
+            <div class="result__content"></div>
+            <button class="result__button">Показать ещё</button>
+        </section>
+        <section class="author">
+            <div class="author__container">
+                <picture>
+                    <source srcset="<%=require('./images/avatar-me.png')%>" type="image/png+xml">
+                    <img src="<%=require('./images/avatar-me.jpg')%>" alt="avatar" class="author__avatar">
+                </picture>
+                <div class="author__content">
+                    <h3 class="author__title">Об авторе</h3>
+                    <p class="author__about">Меня зовут Арзамасцев Роман Сергеевич, я – начинающий Фронтенд-разработчик. Очень нравится программировать, и хочу заниматься этим профессионально. В течение полугода прошёл курс Фронтенд-разработчика в Яндекс Практикуме. Владею HTML, CSS, Javascript, GIT и Webpack, кроссбраузерной и адаптивной вёрсткой. В создании проектов использую методологию БЭМ, работал с макетами используя Figma. Хочу изучить JS React и готов к развитию в этом направлении.</p>
+                    <p class="author__about">Примеры моих учебных работ <a href="https://yadi.sk/d/3ktMRfdNH9ZW_Q" target="_blank" class="author__link">https://yadi.sk/d/3ktMRfdNH9ZW_Q</a>, а связаться со мной можно по e-mail arzamastsevroma@yandex.ru или по телефону +7-925-021-46-63.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">&#169; 2019 Арзамасцев Роман</p>
+            <nav class="footer__menu">
+                <ul class="footer__menu-ul">
+                    <li class="footer__menu-li"><a href="index.html" class="footer__menu-link">Главная</a></li>
+                    <li class="footer__menu-li"><a href="about.html" class="footer__menu-link">О проекте</a></li>
+                    <li class="footer__menu-li"><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__menu-link">Яндекс.Практикум</a></li>
+                </ul>
+            </nav>
+            <div class="footer__container-icon">
+                <a href="https://github.com/" target="_blank" class="footer__link"><img src="<%=require('./images/github.png')%>" alt="icon github" class="footer__icon"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="footer__link"><img src="<%=require('./images/facebook.png')%>" alt="icon facebook" class="footer__icon"></a> 
+            </div>
+        </footer>
+    </main>
+    <script src = "<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
