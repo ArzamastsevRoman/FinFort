@@ -1,0 +1,9 @@
+.cause__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cause__item:nth-of-type(6) {
+    align-items: flex-end;
+}

@@ -1,0 +1,10 @@
+.cause__button {
+    width: 245px;
+    height: 48px;
+    margin: 0 auto 85px;
+    background: #386AEA;
+    color: #fff;
+    font-family: gothamPro;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}

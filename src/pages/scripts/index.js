@@ -1,11 +1,15 @@
 import '../index.css'
+import '../../vendor/normalize.css'
 
 import '../../blocks/main/main.css'
 import '../../blocks/search/search.css'
 import '../../blocks/body/body.css'
+import '../../blocks/checkbox/checkbox.css'
 import '../../blocks/header/header.css'
-import '../../blocks/author/author.css'
+import '../../blocks/cause/cause.css'
+
 import '../../blocks/footer/footer.css'
+import '../../blocks/author/author.css'
 import '../../blocks/preloader/preloader.css'
 import '../../blocks/not-found/not-found.css'
 import '../../blocks/result/result.css'

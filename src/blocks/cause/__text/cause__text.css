@@ -1,0 +1,12 @@
+@import url(./_one/cause__text_one.css);
+@import url(./_fin/cause__text_fin.css);
+
+.cause__text {
+    width: 65%;
+    margin: 18px 0 0;
+    font-family: gothamPro;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #222;
+}

@@ -1,5 +1,19 @@
 @font-face {
-    font-family: 'gothmPro';
-    src: url('../fonts/GothamPro.woff') format('woff');
-    
-  }
+  font-family: 'gothamPro';
+  src: url('../fonts/GothamPro.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gothamProBold';
+  src: url('../fonts/GothamPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gothamProLight';
+  src: url('../fonts/GothamPro-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'josefinsansBold';
+  src: url('../fonts/josefinsansbold.woff') format('woff');
+}

@@ -12,32 +12,68 @@
     <main class="main">
         <div class="search">
             <header class = 'header'>
-                <h1 class="header__title"><a href='index.html' class="header__title-link">NewsAnalyzer</a></h1>
-                <nav class="header__menu">
-                    <ul class="header__content">
-                        <li class="header__menu-item"><a href="index.html" class="header__link header__link_active">Главная</a></li>
-                        <li class="header__menu-item"><a href="about.html" class="header__link">О проекте</a></li>
-                    </ul>
-                </nav>
+                <img src="<%=require('./images/logo.png')%>" alt="" class="header__logo">
+                <p class="header__content">+7 495 789-35-21</p>
             </header>
-            <h1 class="search__title">Что в мире творится?</h1>
-            <h2 class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</h2>
+            <h2 class="search__subtitle">Профессия Финансовый Консультант</h2>
+            <h1 class="search__title">Стань экспертом и заработай на этом!</h1>
             <div class="search__content-input">
-                <input type="text" required minlength = '2' maxlength = '30' class='search__input' placeholder="Введите тему новости" required>
+                <div class="search__container">
+                    <input type="text" required minlength = '2' maxlength = '30' class='search__input' placeholder="Имя" required>
+                    <input type="number" required minlength = '2' maxlength = '30' class='search__input' placeholder="Номер телефона" required>
+                    <input type="email" required minlength = '2' maxlength = '30' class='search__input' placeholder="Эл. почта" required>
+                    <input type="text" required minlength = '2' maxlength = '30' class='search__input' placeholder="Ваш город" required>
+                </div>
+                <div class="search__container">
+                    <div class="search__item">
+                        <img src="<%=require('./images/clips.png')%>" alt="" class="search__image">
+                        <p class="search__content"><a href="" class="search__link">Прикрепить</a> резюме</p>
+                    </div>
+                    <div class="search__item">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox_1">
+                            <label for="checkbox_1"></label>
+                        </div>
+                        <p class="search__content">Нажимая на кнопку, вы принимаете <a href="" class="search__link">Положение</a> и <a href="" class="search__link">Согласие</a> на обработку персональных данных</p>
+                    </div>
+                    <button class='search__button'>Отправить заявку</button>
+                </div>
                 <span id = "error" class="search__error" aria-live = 'polite'></span>
-                <button class='search__button'>Искать</button>
             </div>    
         </div>
-        <section class="preloader">
-            <h2 class="visually-hidden">Preloader</h2>
-            <i class="preloader__circle"></i>
-            <p class="preloader__name">Идёт поиск новостей</p>
+        <section class="cause">
+            <div class="cause__container">
+                <h2 class="cause__title">5 ПРИЧИН РАБОТАТЬ У НАС!</h2>
+                <div class="cause__content">
+                    <div class="cause__item">
+                        <img src="<%=require('./images/cause1.png')%>" alt="icon home" class="cause__image">
+                        <p class="cause__text cause__text_one">Корпоративный университет с бесплатным обучением</p>
+                    </div>
+                    <div class="cause__item">
+                        <img src="<%=require('./images/cause2.png')%>" alt="icone money" class="cause__image">
+                        <p class="cause__text">Высокий, стабильный доход</p>
+                    </div>
+                    <div class="cause__item">
+                        <img src="<%=require('./images/cause3.png')%>" alt="icon plane" class="cause__image">
+                        <p class="cause__text">Перспектива карьерного роста</p>
+                    </div>
+                    <div class="cause__item">
+                        <img src="<%=require('./images/cause4.png')%>" alt="icon star" class="cause__image">
+                        <p class="cause__text">Уверенность в будущем</p>
+                    </div>
+                    <div class="cause__item">
+                        <img src="<%=require('./images/cause5.png')%>" alt="icon handshake" class="cause__image">
+                        <p class="cause__text">Новая востребованная профессия</p>
+                    </div>
+                    <div class="cause__item">
+                        <h3 class="cause__subtitle">Запишитесь на собеседование!</h3>
+                        <p class="cause__text cause__text_fin">Оставьте заявку прямо сейчас и получите работу мечты.</p>
+                    </div>
+                </div>
+                <button class="cause__button">Отправить заявку</button>
+            </div>
         </section>
-        <section class="not-found">
-            <img src="<%=require('./images/not-found.png')%>" alt="not found image" class="not-found__image">
-            <h3 class="not-found__title">Ничего не найдено</h3>
-            <p class="not-found__content">К сожалению по вашему запросу ничего не найдено</p>
-        </section>
+        
         <section class="result">
             <div class="result__container">
                 <h2 class="result__title">Результаты поиска</h2>

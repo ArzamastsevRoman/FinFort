@@ -1,0 +1,13 @@
+@import url(./__container/cause__container.css);
+@import url(./__title/cause__title.css);
+@import url(./__content/cause__content.css);
+@import url(./__text/cause__text.css);
+@import url(./__item/cause__item.css);
+@import url(./__image/cause__image.css);
+@import url(./__subtitle/cause__subtitle.css);
+@import url(./__button/cause__button.css);
+
+.cause {
+    width: 100%;
+    background: #e5e5e5;
+}
