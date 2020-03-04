@@ -1,0 +1,19 @@
+.description__underline {
+    margin: 10px 0 0;
+    content: ' ';
+    width: 41%;
+    height: 3px;
+    background: #FF3C3C;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .description__underline {
+        width: 61%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .description__underline {
+        width: 100%;
+    }
+}

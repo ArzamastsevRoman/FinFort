@@ -1,0 +1,18 @@
+.finance__text-paragraph {
+    width: 85%;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .finance__text-paragraph {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .finance__text-paragraph {
+        width: 95%;
+    }
+}

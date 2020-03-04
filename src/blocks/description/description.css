@@ -1,0 +1,15 @@
+@import url(./__container/description__container.css);
+@import url(./__title/description__title.css);
+@import url(./__underline/description__underline.css);
+@import url(./__text/description__text.css);
+@import url(./__content/description__content.css);
+@import url(./__item/description__item.css);
+@import url(./__subtitle/description__subtitle.css);
+@import url(./__content-box/description__content-box.css);
+@import url(./__text-box/description__text-box.css);
+@import url(./__button/description__button.css);
+
+.descriprion {
+    width: 100%;
+    background: #fff;
+}

@@ -1,0 +1,17 @@
+.description__content-box {
+   margin: 0;
+   max-width: 630px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+   .description__content-box {
+      max-width: 492px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .description__content-box {
+      max-width: 322px;
+      margin: 24px 0 0;
+   }
+}

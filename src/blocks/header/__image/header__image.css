@@ -1,0 +1,11 @@
+.header__image {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .header__image {
+        display: block;
+    }
+}

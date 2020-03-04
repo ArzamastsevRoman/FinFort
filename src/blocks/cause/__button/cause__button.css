@@ -8,3 +8,27 @@
     font-size: 1.1rem;
     line-height: 1.1rem;
 }
+
+.cause__button:hover {
+    background-color:#1852E8;
+    cursor: pointer;
+}
+
+.cause__button:active,
+.cause__button:focus {
+    background-color: #1852E8;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .cause__button {
+        margin: 75px auto 96px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .cause__button {
+        margin: 60px auto 59px;
+    }
+}

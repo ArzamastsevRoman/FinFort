@@ -1,0 +1,19 @@
+.feedback__content {
+    margin: 35px 0 0;
+    min-height: 48px;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .feedback__content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feedback__content {
+        width: 100%;
+        margin: 54px 0 0;
+        flex-direction: column;
+    }
+}

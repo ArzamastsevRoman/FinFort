@@ -1,20 +1,16 @@
 @import url(./__copyright/footer__copyright.css);
-@import url(./__container-icon/footer__container-icon.css);
 @import url(./__link/footer__link.css);
-@import url(./__menu/footer__menu.css);
-@import url(./__menu-li/footer__menu-li.css);
-@import url(./__menu-link/footer__menu-link.css);
-@import url(./__menu-ul/footer__menu-ul.css);
+@import url(./__container/footer__container.css);
+@import url(./__logo/footer__logo.css);
 
 .footer {
-    display: flex;
     width: 100%;
-    min-height: 80px;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #E5E5E5;
+    color: #222;
+    font-family: josefinsansLight;
 }
 
-@media screen and (min-width: 768px) and (max-width: 850px) {
+/* @media screen and (min-width: 768px) and (max-width: 850px) {
     .footer {
         min-height: 64px;
     }
@@ -28,4 +24,4 @@
         max-height: 320px;
         position: relative;
     }
-}
+} */

@@ -9,6 +9,7 @@
 @import url(./__item/search__item.css);
 @import url(./__content/search__content.css);
 @import url(./__image/search__image.css);
+@import url(./__image-black/search__image-black.css);
 
 .search {
     max-width: 1920px;
@@ -26,6 +27,13 @@
 
 @media screen and (min-width: 768px) and (max-width: 850px) {
     .search {
+        background-position: 61%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search {
         align-items: flex-start;
+        background-position: 70%;
     }
 }

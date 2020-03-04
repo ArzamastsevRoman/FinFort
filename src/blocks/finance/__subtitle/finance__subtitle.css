@@ -1,0 +1,19 @@
+.finance__subtitle {
+    margin: 96px 0 0;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .finance__subtitle {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .finance__subtitle {
+        width: 95%;
+        margin: 48px 0 0;
+    }
+}

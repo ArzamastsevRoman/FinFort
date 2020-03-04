@@ -1,0 +1,23 @@
+.finance__text-item {
+    margin: 24px 0;
+    width: 82%;
+    font-family: josefinsansLight;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .finance__text-item {
+        width: calc(100% - 32px*2);
+        margin: 35px 0 36px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .finance__text-item {
+        width: calc(100% - 20px*2);
+        margin: 24px 0 24px;
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+}

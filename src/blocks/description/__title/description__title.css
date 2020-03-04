@@ -1,0 +1,25 @@
+.description__title {
+    margin: 140px 0 0;
+    font-family: gothamProBold;
+    font-size: 3rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+    color: #FF3C3C;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .description__title {
+        width: 100%;
+        margin: 96px 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .description__title {
+        width: 90%;
+        margin: 69px 0 0;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        padding-bottom: 10px;
+    }
+}

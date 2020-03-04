@@ -1,3 +1,20 @@
 .search__link {
     color: #fff;
 }
+
+.search__link:hover {
+    color:#ADF5FF;
+    cursor: pointer;
+}
+
+.search__link:active,
+.search__link:focus {
+    color: #BB6BD9;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .search__link {
+        color: #222;
+    }
+}

@@ -1,0 +1,12 @@
+.search__image-black {
+    width: 17px;
+    height: 17px;
+    margin: 0 8px 0 0;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .search__image-black {
+        display: block;
+    }
+}

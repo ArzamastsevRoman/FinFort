@@ -17,3 +17,13 @@
   font-family: 'josefinsansBold';
   src: url('../fonts/josefinsansbold.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'josefinsans';
+  src: url('../fonts/josefinsans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'josefinsansLight';
+  src: url('../fonts/josefinsanslight.woff') format('woff');
+}

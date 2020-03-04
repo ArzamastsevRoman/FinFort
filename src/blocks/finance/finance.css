@@ -1,0 +1,21 @@
+@import url(./__container/finance__container.css);
+@import url(./__subtitle/finance__subtitle.css);
+@import url(./__title/finance__title.css);
+@import url(./__content/finance__content.css);
+@import url(./__text-paragraph/finance__text-paragraph.css);
+@import url(./__content-box/finance__content-box.css);
+@import url(./__box/finance__box.css);
+@import url(./__image/finance__image.css);
+@import url(./__text-box/finance__text-box.css);
+@import url(./__item/finance__item.css);
+@import url(./__image-item/finance__image-item.css);
+@import url(./__text-item/finance__text-item.css);
+@import url(./__text-span/finance__text-span.css);
+@import url(./__button/finance__button.css);
+
+.finance {
+    width: 100%;
+    background: #406CDD;
+    color: #fff;
+    font-family: gothamPro;
+}

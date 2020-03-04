@@ -1,0 +1,11 @@
+.finance__image {
+    width: 34px;
+    height: 64px;
+    margin: 0 0 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .finance__image {
+        margin: 0;
+    }
+}

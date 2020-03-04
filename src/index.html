@@ -12,8 +12,9 @@
     <main class="main">
         <div class="search">
             <header class = 'header'>
-                <img src="<%=require('./images/logo.png')%>" alt="" class="header__logo">
+                <img src="<%=require('./images/logo.png')%>" alt="logo FinFort" class="header__logo">
                 <p class="header__content">+7 495 789-35-21</p>
+                <img src="<%=require('./images/phone.png')%>" alt="icon phone" class="header__image">
             </header>
             <h2 class="search__subtitle">Профессия Финансовый Консультант</h2>
             <h1 class="search__title">Стань экспертом и заработай на этом!</h1>
@@ -27,7 +28,8 @@
                 <div class="search__container">
                     <div class="search__item">
                         <img src="<%=require('./images/clips.png')%>" alt="" class="search__image">
-                        <p class="search__content"><a href="" class="search__link">Прикрепить</a> резюме</p>
+                        <img src="<%=require('./images/clipsBlack.png')%>" alt="" class="search__image-black">
+                        <p class="search__content search__content_link"><a href="" class="search__link">Прикрепить</a> резюме</p>
                     </div>
                     <div class="search__item">
                         <div class="checkbox">
@@ -73,41 +75,116 @@
                 <button class="cause__button">Отправить заявку</button>
             </div>
         </section>
-        
-        <section class="result">
-            <div class="result__container">
-                <h2 class="result__title">Результаты поиска</h2>
-                <a href="./analytics.html" class="result__link">Посмотреть аналитику <img src="./images/Path_5.png" alt="arrow right"></a>
-            </div>
-            <p class="result__error">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз</p>
-            <div class="result__content"></div>
-            <button class="result__button">Показать ещё</button>
-        </section>
-        <section class="author">
-            <div class="author__container">
-                <picture>
-                    <source srcset="<%=require('./images/avatar-me.png')%>" type="image/png+xml">
-                    <img src="<%=require('./images/avatar-me.jpg')%>" alt="avatar" class="author__avatar">
-                </picture>
-                <div class="author__content">
-                    <h3 class="author__title">Об авторе</h3>
-                    <p class="author__about">Меня зовут Арзамасцев Роман Сергеевич, я – начинающий Фронтенд-разработчик. Очень нравится программировать, и хочу заниматься этим профессионально. В течение полугода прошёл курс Фронтенд-разработчика в Яндекс Практикуме. Владею HTML, CSS, Javascript, GIT и Webpack, кроссбраузерной и адаптивной вёрсткой. В создании проектов использую методологию БЭМ, работал с макетами используя Figma. Хочу изучить JS React и готов к развитию в этом направлении.</p>
-                    <p class="author__about">Примеры моих учебных работ <a href="https://yadi.sk/d/3ktMRfdNH9ZW_Q" target="_blank" class="author__link">https://yadi.sk/d/3ktMRfdNH9ZW_Q</a>, а связаться со мной можно по e-mail arzamastsevroma@yandex.ru или по телефону +7-925-021-46-63.</p>
+        <section class="description">
+            <div class="description__container">
+                <h2 class="description__title">Открыт набор новых сотрудников</h2>
+                <div class="description__underline"></div>
+                <p class="description__text">В связи с расширением Компании, открыт набор новых сотрудников. Нам требуются активные, целеустремлённые люди с желанием хорошо зарабатывать. Навыки продаж будут плюсом, но главное желание продавать.</p>
+                <p class="description__text">Мы предлагаем достойную заработную плату, которая выплачивается часто и в срок, хорошее обучение, которое останется с вами навсегда, дружный коллектив, возможность быстрого карьерного роста до Руководителя Группы и Директора Подразделения.</p>
+                <div class="description__content">
+                    <div class="description__item">
+                        <h3 class="description__subtitle">Обязанности:</h3>
+                        <div class="description__content-box">
+                            <p class="description__text-box">- Консультирование граждан по финансовым продуктам</p>
+                            <p class="description__text-box">- Составление личного финансового плана клиента</p>
+                            <p class="description__text-box">- Работа по "теплым" заявкам и активный поиск клиентов</p>
+                            <p class="description__text-box">- Проведение встреч с клиентами, оценка платежеспособности</p>
+                            <p class="description__text-box">- Сопровождение клиента после выдачи продукта; неограниченный доход</p>
+                        </div>
+                    </div>
+                    <div class="description__item">
+                        <h3 class="description__subtitle">Требования:</h3>
+                        <div class="description__content-box">
+                            <p class="description__text-box">- Желание и умение помогать людям в грамотном финансовом планировании</p>
+                            <p class="description__text-box">- Опыт в активных продажах является Вашим преимуществом</p>
+                            <p class="description__text-box">- Желание и умение продавать</p>
+                            <p class="description__text-box">- Умение работать быстро в режиме многозадачности</p>
+                            <p class="description__text-box">- Ответственность, исполнительность</p>
+                            <p class="description__text-box">- Грамотная речь, активная жизненная позиция, коммуникабельность, инициативность, стрессоустойчивость, ответственность, порядочность, ориентация на клиента и результат, быстрая обучаемость</p>
+                            <p class="description__text-box">- Способность легко устанавливать контакты, находить правильный тон в общении</p>
+                        </div>
+                    </div>
+                    <div class="description__item">
+                        <h3 class="description__subtitle">Условия:</h3>
+                        <div class="description__content-box">
+                            <p class="description__text-box">- Достойный неограниченный доход</p>
+                            <p class="description__text-box">- Прозрачная система мотивации</p>
+                            <p class="description__text-box">- Профессиональный и карьерный рост</p>
+                            <p class="description__text-box">- Внутреннее и внешнее обучение</p>
+                            <p class="description__text-box">- Полный рабочий день. 20% офис / 80% выезды к клиентам</p>
+                            <p class="description__text-box">- Заработная плата выплачивается без задержек и в полном объеме!</p>
+                            <p class="description__text-box">- Работа в крупной финансовой компании</p>
+                            <p class="description__text-box">- Интересные задачи, позволяющие профессионально развиваться</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="description__button">Отправить заявку</button>
+            </div>
+        </section>
+        <section class="finance">
+            <div class="finance__container">
+                <h3 class="finance__subtitle">Рост заинтересованных россиян продуктами финансовой сферы 60% в год</h3>
+                <h2 class="finance__title">Финансовая грамотность</h2>
+                <div class="finance__content">
+                    <p class="finance__text-paragraph">В рамках осуществления стратегии повышения финансовой грамотности в Российской Федерации на 2017—2023гг. согласно распоряжению правительства РФ от 25 сентября 2017г. № 2039-Р. И в исполнение постановления правительства Российской Федерации от 15 апреля 2014г. № 320 «Об утверждении государственной программы Российской Федерации «Управление государственными финансами и регулирование финансовых рынков».</p>
+                    <p class="finance__text-paragraph">Компания «Финфорт агентские сети» осуществляет комплекс мероприятий по повышению финансовой грамотности населения России.</p>
+                    <div class="finance__box">
+                        <img src="<%=require('./images/finance1.png')%>" alt="icon question" class="finance__image">
+                        <p class="finance__text-box">Люди постоянно интересуются вопросами, связанными с финансовыми продуктами, страхованием, кредитами. Особенно в такое стремительно развивающееся и турбулентное время.</p>
+                    </div>
+                    <div class="finance__content-box">
+                        <div class="finance__item">
+                            <img src="<%=require('./images/finance2.png')%>" alt="icon piramid" class="finance__image-item">
+                            <p class="finance__text-item">В регионах с низким уровнем жизни людей больше всего волнуют <span class="finance__text-span">вопросы выживания</span>: как планировать семейный бюджет и какие финансовые продукты для этого необходимы, какие есть возможности реструктуризации и рефинансирования имеющихся кредитов.</p>
+                        </div>
+                        <div class="finance__item">
+                            <img src="<%=require('./images/finance3.png')%>" alt="icon piramid" class="finance__image-item">
+                            <p class="finance__text-item">В более зажиточных регионах фокус интересов другой: <span class="finance__text-span">как приумножить свои средства</span> на финансовом рынке, как грамотно инвестировать, как умело пользоваться налоговыми вычетами и прочими возможностями.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="finance__button">Отправить заявку</button>
+            </div>
+        </section>
+        <section class="success">
+            <div class="success__container">
+                <h2 class="success__title">Успех и стабильность</h2>
+                <div class="success__content">
+                    <div class="success__item">
+                        <img src="<%=require('./images/success1.png')%>" alt="icon" class="success__image">
+                        <h3 class="success__subtitle">Социально значимая миссия</h3>
+                    </div>
+                    <div class="success__item">
+                        <img src="<%=require('./images/success2.png')%>" alt="icon" class="success__image">
+                        <h3 class="success__subtitle">Своевременность</h3>
+                    </div>
+                    <div class="success__item">
+                        <img src="<%=require('./images/success3.png')%>" alt="icon" class="success__image">
+                        <h3 class="success__subtitle">Высокий доход</h3>
+                    </div>
+                    <div class="success__item">
+                        <img src="<%=require('./images/success4.png')%>" alt="icon" class="success__image">
+                        <h3 class="success__subtitle">Четкие алгоритмы работы</h3>
+                    </div>
+                </div>
+                <button class="success__button">Присоединяйтесь прямо сейчас!</button>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback__container">
+                <h2 class="feedback__title">Оставьте телефон и мы вам перезвоним для записи на собеседование!</h2>
+                <div class="feedback__content">
+                    <input type="number" required minlength = '2' maxlength = '30' class='feedback__input' placeholder="Номер телефона">
+                    <button class="feedback__button">Перезвоните мне</button>
+                </div>
+                <p class="feedback__paragraph">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.</p>
             </div>
         </section>
         <footer class="footer">
-            <p class="footer__copyright">&#169; 2019 Арзамасцев Роман</p>
-            <nav class="footer__menu">
-                <ul class="footer__menu-ul">
-                    <li class="footer__menu-li"><a href="index.html" class="footer__menu-link">Главная</a></li>
-                    <li class="footer__menu-li"><a href="about.html" class="footer__menu-link">О проекте</a></li>
-                    <li class="footer__menu-li"><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__menu-link">Яндекс.Практикум</a></li>
-                </ul>
-            </nav>
-            <div class="footer__container-icon">
-                <a href="https://github.com/" target="_blank" class="footer__link"><img src="<%=require('./images/github.png')%>" alt="icon github" class="footer__icon"></a>
-                <a href="https://www.facebook.com/" target="_blank" class="footer__link"><img src="<%=require('./images/facebook.png')%>" alt="icon facebook" class="footer__icon"></a> 
+            <div class="footer__container">
+                <img src="<%=require('./images/footer-logo.png')%>" alt="logo FinFort" class="footer__logo">
+                <p class="footer__copyright">&#169; ООО «Финфорт агентские сети», 2020. Сайт не является публичной офертой и носит информационный характер. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.</p>
+                <a href="" class="footer__link">Политика конфиденциальности</a>
             </div>
         </footer>
     </main>

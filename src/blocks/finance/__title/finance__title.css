@@ -1,0 +1,25 @@
+.finance__title {
+    width: 41%;
+    margin: 9px 0 0;
+    font-family: gothamProBold;
+    font-size: 3rem;
+    line-height: 3.4rem;
+    text-transform: uppercase;
+    box-shadow: inset 0px -2px 0px #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .finance__title {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .finance__title {
+        width: 100%;
+        margin: 24px 0 0;
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        padding-bottom: 10px;
+    }
+}

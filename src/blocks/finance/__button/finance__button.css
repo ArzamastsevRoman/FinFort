@@ -1,0 +1,32 @@
+.finance__button {
+    margin: 60px 0 96px 330px;
+    width: 219px;
+    height: 48px;
+    background: #406CDD;
+    border: 2px solid #FFF;
+    color: #fff;
+}
+
+.finance__button:hover {
+    background-color:#1852E8;
+    cursor: pointer;
+}
+
+.finance__button:active,
+.finance__button:focus {
+    background-color: #1852E8;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .finance__button {
+        margin: 60px auto 81px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .finance__button {
+        margin: 60px 0;
+        width: 100%;
+    }
+}

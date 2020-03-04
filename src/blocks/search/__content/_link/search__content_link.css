@@ -1,0 +1,9 @@
+.search__content.search__content_link {
+    width: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    .search__content.search__content_link {
+        color: #222;
+    }
+}

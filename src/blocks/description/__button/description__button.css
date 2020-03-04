@@ -1,0 +1,35 @@
+.description__button {
+    margin: 76px auto 95px;
+    width: 245px;
+    height: 48px;
+    background: #FF3E55;
+    font-family: gothamPro;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #FFF;
+    border: 1px solid #FF3E55;
+}
+
+.description__button:hover {
+    background-color:#EC1C35;
+    cursor: pointer;
+}
+
+.description__button:active,
+.description__button:focus {
+    background-color: #EC1C35;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .description__button {
+        margin: 60px auto 96px;
+    }
+}
+
+ @media screen and (max-width: 767px) {
+    .description__button {
+        width: 100%;
+        margin: 34px 0 72px;
+    }
+}

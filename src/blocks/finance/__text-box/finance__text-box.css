@@ -1,0 +1,15 @@
+.finance__text-box {
+    width: 82%;
+    margin: 0 0 0 20px;
+    font-family: gothamProBold;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+@media screen and (max-width: 767px) {
+    .finance__text-box {
+        margin: 24px 0 0;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}

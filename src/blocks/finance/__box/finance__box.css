@@ -1,0 +1,21 @@
+.finance__box {
+    margin: 48px 0 0;
+    width: 80%;
+    display: flex;
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .finance__box {
+        margin: 40px 0 0;
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .finance__box {
+        margin: 24px 0 0;
+        width: 97%;
+        flex-direction: column;
+    }
+}

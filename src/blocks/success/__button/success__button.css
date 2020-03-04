@@ -1,0 +1,35 @@
+.success__button {
+    margin: 49px auto 98px;
+    width: 351px;
+    height: 48px;
+    background: #FF3E55;
+    color: #fff;
+    font-family: gothamPro;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    border: 1px solid #FF3E55;
+}
+
+.success__button:hover {
+    background-color:#EC1C35;
+    cursor: pointer;
+}
+
+.success__button:active,
+.success__button:focus {
+    background-color: #EC1C35;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .success__button {
+        margin: 72px auto 96px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .success__button {
+        margin: 60px 0 90px;
+        width: 100%;
+    }
+}

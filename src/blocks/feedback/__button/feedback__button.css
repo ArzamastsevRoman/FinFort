@@ -1,0 +1,29 @@
+.feedback__button {
+    margin: 0 0 0 27px;
+    width: 219px;
+    background: #FF3E55;
+    color: #FFF;
+    font-family: gothamPro;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    border: 1px solid #FF3E55;
+}
+
+.feedback__button:hover {
+    background-color:#EC1C35;
+    cursor: pointer;
+}
+
+.feedback__button:active,
+.feedback__button:focus {
+    background-color: #EC1C35;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .feedback__button {
+        margin: 60px 0 0;
+        width: 100%;
+        height: 48px;
+    }
+}

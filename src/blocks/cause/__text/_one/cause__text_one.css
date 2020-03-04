@@ -1,3 +1,9 @@
 .cause__text.cause__text_one {
     width: 76%;
 }
+
+@media screen and (max-width: 767px) {
+    .cause__text.cause__text_one {
+        width: 70%;
+    }
+}

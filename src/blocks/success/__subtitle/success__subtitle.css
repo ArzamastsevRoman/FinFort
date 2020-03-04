@@ -1,0 +1,15 @@
+.success__subtitle {
+    margin: 18px 0 0;
+    font-family: gothamProLight;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #222;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .success__subtitle {
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+}

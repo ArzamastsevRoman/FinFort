@@ -1,29 +1,27 @@
 .search__title {
+    margin: 14px 0 0;
+    width: 40%;
     font-family: gothamProBold;
     font-style: normal;
     font-weight: normal;
     font-size: 3.3rem;
     line-height: 3.75rem;
     text-align: center;
-    margin: 14px 0 0;
-    width: calc(100% - 70%);
 }
 
 @media screen and (min-width: 768px) and (max-width: 850px) {
     .search__title {
-        margin: 40px 0 0 163px;
-        font-size: 2.2rem;
-        line-height: 2.5rem;
-        font-weight: 100;
+        margin: 21px 0 0;
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 767px) {
     .search__title {
-        margin: 30px 16px 0 19px;
-        font-size: 2.2rem;
-        line-height: 2.5rem;
-        font-weight: 100;
-        width: calc(100% - 35px);
+        margin: 190px 20px 0;
+        font-size: 2.7rem;
+        line-height: 2.7rem;
+        text-align: start;
+        width: 74%;
     }
 }

@@ -55,4 +55,10 @@
 /*Добавляем фокус к внешнему блоку поддельного чекбокса*/
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: rgb(59, 153, 252) auto 5px;
-   }
+}
+
+@media screen and (max-width: 767px) {
+    .checkbox {
+        display: none;
+    }
+}

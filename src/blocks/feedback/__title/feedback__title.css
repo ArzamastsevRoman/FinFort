@@ -1,0 +1,24 @@
+.feedback__title {
+    width: 55%;
+    margin: 83px 0 0;
+    font-family: gothamProBold;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .feedback__title {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feedback__title {
+        width: 100%;
+        margin: 60px 0 0;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        text-align: left;
+    }
+}

@@ -1,0 +1,9 @@
+.finance__content {
+    margin: 53px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+    .finance__content {
+        margin: 48px 0 0;
+    }
+}

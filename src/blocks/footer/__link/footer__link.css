@@ -1,13 +1,36 @@
 .footer__link {
-    margin: 0 28px 0 0;
-    width: 20px;
-    height: 20px;
+    margin: 31px 0 30px;
+    width: 50%;
+    color: #222;
+    font-family: josefinsansLight;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
 }
 
 .footer__link:nth-of-type(2) {
     margin: 0;
 }
 
-.footer__link:active {
-    opacity: 0.9;
+.footer__link:hover {
+    color:#ADF5FF;
+    cursor: pointer;
+}
+
+.footer__link:active,
+.footer__link:focus {
+    color: #BB6BD9;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .footer__link {
+        margin: 59px 0 59px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__link {
+        margin: 47px 0;
+        width: 100%;
+    }
 }

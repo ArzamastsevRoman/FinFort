@@ -1,0 +1,15 @@
+.feedback__input {
+    width: calc(337px - 23px*2);
+    padding: 0 23px;
+    background: #fff;
+    color: #0060FE;
+}
+
+@media screen and (max-width: 767px) {
+    .feedback__input {
+        width: calc(100% - 34px);
+        height: 48px;
+        padding: 0 0 0 23px;
+        background: #fff;
+    }
+}
