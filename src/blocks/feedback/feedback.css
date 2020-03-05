@@ -4,6 +4,8 @@
 @import url(./__input/feedback__input.css);
 @import url(./__button/feedback__button.css);
 @import url(./__paragraph/feedback__paragraph.css);
+@import url(./__error/feedback__error.css);
+@import url(./__content-input/feedback__content-input.css);
 
 .feedback {
     width: 100%;

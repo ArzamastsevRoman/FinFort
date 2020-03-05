@@ -11,15 +11,23 @@ import '../../blocks/description/description.css'
 import '../../blocks/finance/finance.css'
 import '../../blocks/success/success.css'
 import '../../blocks/feedback/feedback.css'
-
 import '../../blocks/footer/footer.css'
 
-// const imageLink = document.querySelector('.search__image');
+import Validate from './validate/validate'
+const search = document.querySelector('.search');
+const validate = new Validate (search);
 
-// imageLink.addEventListener('mouseover', function() {
-//     imageLink.setAttribute('src', './images/clipsGreen.png');
-// })
+const imageLink = document.querySelector('.search__image');
+const searchLink = document.querySelector('.search__link');
 
-// imageLink.addEventListener('click', function() {
-//     imageLink.setAttribute('src', './images/clipsViolet.png');
-// })
+searchLink.addEventListener('mouseover', function() {
+    imageLink.setAttribute('src', './images/clipsGreen.png');
+})
+
+searchLink.addEventListener('mouseout', function() {
+    imageLink.setAttribute('src', './images/clips.png');
+})
+
+searchLink.addEventListener('mousedown', function() {
+    imageLink.setAttribute('src', './images/clipsViolet.png');
+})

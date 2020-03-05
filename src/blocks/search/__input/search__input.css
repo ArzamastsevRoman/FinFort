@@ -37,6 +37,20 @@
     border: 0;
 }
 
+.search__input:invalid:not(:placeholder-shown) + .search__error {
+    display: block;
+}
+
+.search__input:valid:not(:placeholder-shown) {
+    border-color: #ffdb4d;
+    color: #333;
+}
+
+.search__input:invalid:not(:placeholder-shown) {
+    border-color: #df4b41;
+    color: #eb5757;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1050px) {
     .search__input {
         width: 50%;

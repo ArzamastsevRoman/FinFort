@@ -1,0 +1,5 @@
+.feedback__content-input {
+    display: flex;   
+    flex-direction: column;
+}
+

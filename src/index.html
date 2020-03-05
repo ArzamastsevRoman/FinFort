@@ -20,10 +20,14 @@
             <h1 class="search__title">Стань экспертом и заработай на этом!</h1>
             <div class="search__content-input">
                 <div class="search__container">
-                    <input type="text" required minlength = '2' maxlength = '30' class='search__input' placeholder="Имя" required>
-                    <input type="number" required minlength = '2' maxlength = '30' class='search__input' placeholder="Номер телефона" required>
-                    <input type="email" required minlength = '2' maxlength = '30' class='search__input' placeholder="Эл. почта" required>
-                    <input type="text" required minlength = '2' maxlength = '30' class='search__input' placeholder="Ваш город" required>
+                    <input class='search__input' type="text" required minlength = '2' maxlength = '30' pattern="([А-ЯЁ]{1}[а-яё]+)(-[А-ЯЁ]{1}[а-яё]+)?" placeholder="Имя" >
+                    <span class="search__error">Пожалуйста, введите корректные данные</span>
+                    <input class='search__input' type="tel" required pattern="((\+7|8)\d{10})|((\+7|8)\(\d{3}\)\s?\d{3}-\d{2}-\d{2})|((\+7|8)\s\d{3}-\d{3}-\d{2}-\d{2})" minlength="11" placeholder="Номер телефона">
+                    <span class="search__error">Пожалуйста, введите корректные данные</span>
+                    <input class="search__input" type="email" required pattern="\w{2,}((\.|-)?\w{2,})*@\w{2,}\.\w{2,}(\.\w{2,})*" placeholder="Эл. почта" />
+                    <span class="search__error">Пожалуйста, введите корректные данные</span>
+                    <input class='search__input' type="text" required minlength = '2' maxlength = '30' pattern="([А-ЯЁ]{1}[а-яё]+)(-[А-ЯЁ]{1}[а-яё]+)?" placeholder="Ваш город" >
+                    <span class="search__error">Пожалуйста, введите корректные данные</span>
                 </div>
                 <div class="search__container">
                     <div class="search__item">
@@ -174,7 +178,10 @@
             <div class="feedback__container">
                 <h2 class="feedback__title">Оставьте телефон и мы вам перезвоним для записи на собеседование!</h2>
                 <div class="feedback__content">
-                    <input type="number" required minlength = '2' maxlength = '30' class='feedback__input' placeholder="Номер телефона">
+                    <div class="feedback__content-input">
+                        <input type="tel" required class='feedback__input' placeholder="Номер телефона" pattern="((\+7|8)\d{10})|((\+7|8)\(\d{3}\)\s?\d{3}-\d{2}-\d{2})|((\+7|8)\s\d{3}-\d{3}-\d{2}-\d{2})" minlength="11">
+                        <span class="feedback__error">Пожалуйста, введите телефон в формате: +7 (123) 456-78-90</span>
+                    </div>
                     <button class="feedback__button">Перезвоните мне</button>
                 </div>
                 <p class="feedback__paragraph">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных данных.</p>

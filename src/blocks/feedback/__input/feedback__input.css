@@ -1,8 +1,39 @@
 .feedback__input {
     width: calc(337px - 23px*2);
+    height: 48px;
     padding: 0 23px;
     background: #fff;
-    color: #0060FE;
+    color: #333;
+    border: none;
+}
+
+.feedback__input:invalid:not(:placeholder-shown) + .feedback__error {
+    display: block;
+}
+
+.feedback__input:valid:not(:placeholder-shown) {
+	border-color: #ffdb4d;
+}
+
+.feedback__input:invalid:not(:placeholder-shown) {
+    border-color: #df4b41;
+    color: #eb5757;
+}
+
+.feedback__input::-webkit-input-placeholder {
+    color:#0060FE; opacity:1;
+}
+
+.feedback__input::-moz-placeholder {
+    color:#0060FE; opacity:1;
+}
+
+.feedback__input:-moz-placeholder  {
+    color:#0060FE; opacity:1;
+}
+
+.feedback__input:-ms-input-placeholder {
+    color:#0060FE; opacity:1;
 }
 
 @media screen and (max-width: 767px) {

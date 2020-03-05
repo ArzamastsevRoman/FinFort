@@ -1,0 +1,4 @@
+.search__caontainer-input {
+    display: flex;   
+    flex-direction: column;   
+}

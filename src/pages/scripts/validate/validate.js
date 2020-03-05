@@ -2,15 +2,28 @@ export default class Validate {
 
 	constructor (container) {
         this.container = container;
-		this.input = container.querySelector('.search__input');
+		this.input = container.querySelectorAll('.search__input');
+		console.log(this.input)
         this.button = container.querySelector('.search__button')
 
 		this.inputValidate = this.inputValidate.bind(this);
 		this.validate = this.validate.bind(this);
 
-		this.input
+		this.input[0]
             .addEventListener('click', this.inputValidate);
-        this.input
+        this.input[0]
+			.addEventListener('input', this.inputValidate);
+		this.input[1]
+            .addEventListener('click', this.inputValidate);
+        this.input[1]
+			.addEventListener('input', this.inputValidate);
+		this.input[2]
+            .addEventListener('click', this.inputValidate);
+        this.input[2]
+			.addEventListener('input', this.inputValidate);
+		this.input[3]
+            .addEventListener('click', this.inputValidate);
+        this.input[3]
 			.addEventListener('input', this.inputValidate);
 
 		this.diactivatedButton = this.diactivatedButton.bind(this);
@@ -22,25 +35,21 @@ export default class Validate {
 	}
 	
 	validate(element) {
-		const errorElement = this.container.querySelector(`.search__error`);
-		
+
 		if (element.validity.tooShort) {
-			errorElement.textContent = 'Должно быть от 2 до 30 символов';
 			this.diactivatedButton();
 		} else if (element.validity.valueMissing) {
-			errorElement.textContent = 'Нужно ввести ключевое слово';
 			this.diactivatedButton();
 		} else {
-			errorElement.textContent = '';
 			this.activatedButton();
 		}
 	}
 
 	diactivatedButton () {
-        this.button.setAttribute('disabled', true);
+		this.button.classList.add('search__button_diactivated');
   	}
 	
 	activatedButton () {
-		this.button.removeAttribute('disabled');
+		this.button.classList.remove('search__button_diactivated');
   	}
 }
